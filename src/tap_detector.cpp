@@ -23,8 +23,8 @@ void TapDetector::Init(void)
   imu.setFullScaleAcc(LSM6::ACC_FS4);
   imu.setAccDataOutputRate(LSM6::ODR104);
 
-  imu.writeReg(0x59, 0x04); //threshold
-  imu.writeReg(0x58, 0x0d); //x,y, latch
+  imu.writeReg(0x59, 0x04); 
+  imu.writeReg(0x58, 0x0C); 
 }
 
 bool TapDetector::CheckTap(void)
