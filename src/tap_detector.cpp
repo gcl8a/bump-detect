@@ -31,7 +31,7 @@ bool TapDetector::CheckTap(void)
 {
   bool retVal = false;
   
-  uint8_t tapReg = imu.readReg(0x1c);
+  uint8_t tapReg = imu.readReg(0x1C);
   if(tapReg & 0x06)
   {
     Serial.print("tapped: ");
